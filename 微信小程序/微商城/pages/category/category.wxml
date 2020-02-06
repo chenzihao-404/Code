@@ -1,0 +1,20 @@
+<view class='category'>
+    <view class='left' style="height: {{scrollH}}px;" >
+       <scroll-view scroll-y="true" style="height: {{scrollH}}px;" >
+          <view wx:for="{{categoryArr}}" wx:key="*this" bindtap='itemName' data-index="{{item.id}}" class="scroll-view-item {{item.id==num?'con':''}}">{{item.iconText}}</view>
+        </scroll-view>
+    </view>
+</view>
+<view class='right'>
+    <view class='datalists' style="min-height:{{scrollH}}px;width:{{Wwidth}}px">
+        <view class='ul clearfix'>
+            <view class='li' wx:for="{{categorylistsdata}}" wx:key="*this">
+                <navigator url="/pages/details/details?id={{item.id}}" hover-class="none">
+                <image src='http://192.168.73.1:3000/{{item.goodsImage}}'></image>
+                <text>{{item.goodsName}}</text>
+                </navigator>
+            </view>
+            
+        </view>
+    </view>
+</view>

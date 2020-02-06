@@ -1,0 +1,50 @@
+<!-- 轮播图 -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+            <view>
+                <image src="{{item}}"></image>
+            </view>
+        </swiper-item>
+    </block>
+</swiper>
+<!-- 轮播图 end -->
+
+<!-- 分类内容 -->
+<view class='category clearfix'>
+    <view class='ul' wx:for="{{categoryArr}}" wx:key="*this">
+        <view class='li'>
+            <image src="http://192.168.73.1:3000/{{item.iconUrl}}"  bindtap="onclick" id="{{item.id}}"></image>
+            <text>{{item.iconText}}</text>
+        </view>
+    </view>
+</view>
+<!-- 分类内容 end -->
+
+<!-- 商品列表 -->
+<view class='common_title'>
+    <text>商品列表</text>
+</view>
+
+<view class='goodsList clearfix' wx:for="{{goodsList}}" wx:key="*this">
+    <view class='left'>
+        <image src="http://192.168.73.1:3000/{{item.goodsImage}}"></image>
+    </view>
+    <view class='right'>
+        <navigator url="/pages/details/details?id={{item.id}}" hover-class="none">
+            <view class='goodsName'>
+                <text>{{item.goodsName}}</text>
+            </view>
+            <view class='goodsAddress'>
+                <text>{{item.goodsAddress}}</text>
+            </view>
+            <view class='goodsPrice'>
+                <text>￥{{item.goodsPrice}}</text>
+            </view>
+            <view class='car'>
+                <image src='../../image/car.png'></image>
+            </view>
+        </navigator>
+    </view>
+</view>
+<!-- 商品列表 end -->

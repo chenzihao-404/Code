@@ -1,0 +1,65 @@
+<!-- 轮播图 -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{goods.detailImgs}}" wx:key="*this">
+        <swiper-item>
+            <view>
+                <image src="http://192.168.73.1:3000/{{item}}"></image>
+            </view>
+        </swiper-item>
+    </block>
+</swiper>
+<!-- 轮播图 end -->
+
+<!-- 商品详情 -->
+<view class='goods_info'>
+    <view class='goods_title'>
+        {{goods.goodsName}}
+        <view class='collect' wx:if="{{goods.isCollect}}">
+            <image src='../../image/icon-aixin.png'></image>
+            <text>已收藏</text>
+        </view>
+        <view class='collect' wx:else>
+            <image src='../../image/icon-aixin1.png'></image>
+            <text>未收藏</text>
+        </view>
+    </view>
+    <view class='goods_price'>
+        <text>￥{{goods.goodsPrice}}</text>
+        <text class='oldprice'>￥{{goods.goodsHotPrice}}</text>
+    </view>
+    <view class='goods_deliver'>
+        *本产品由商家发货*
+    </view>
+</view>
+
+<!-- 商品详情 end -->
+
+<view class='goods_content'>
+    <image src="../../image/brand.png"></image>
+    <text>{{goods.goodsContent}}</text>
+</view>
+
+<view class='goods_detail'>
+    <image src='http://192.168.73.1:3000/{{goods.goodsDetail}}' mode='widthFix'></image>
+</view>
+
+
+<view class='goods_bottom'>
+    <view class='ul clearfix'>
+        <view class='li' bindtap="Car">
+            <view class='item'>
+                <image src='../../image/car.png'></image>
+                <text class='num'>{{num}}</text>
+            </view>
+        </view>
+        <view class='li dv1'>
+            前往商城
+        </view>
+        <view class='li dv2' bindtap='getCar'>
+            加入购物车
+        </view>
+        <view class='li dv3'>
+            前往付款
+        </view>
+    </view>
+</view>

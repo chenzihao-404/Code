@@ -1,0 +1,40 @@
+/* pages/my/my.wxss */
+.info{
+    background: #fff;
+    text-align: center;
+    padding:20px;
+    margin-bottom: 10px;
+}
+.info .img{
+    width: 90px;
+    height: 90px;
+    margin: 0px auto 20px auto;
+}
+.info .img image{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.info .nickname{
+    font-size: 18px;
+    color:#696969;
+}
+.lists{
+    background: #fff;
+    border-top: 1px solid #e5e5e5;
+}
+.lists .li{
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: 10px;
+    position: relative;
+    font-size: 14px;
+}
+.lists .li image{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top:14px;
+    right: 18px;
+}

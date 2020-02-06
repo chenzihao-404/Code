@@ -1,0 +1,31 @@
+<view class='pay_address'>
+    <image class='address_icon' src='../../image/icon-dw.png'></image>
+    <view class='address_info'>
+        <text>李四 1301111222</text>
+        <text>广东省广州市t天河区吉山小学</text>
+    </view>
+    <image class='pay_sel' src='../../image/icon-arrow.png'></image>
+</view>
+
+<view class='table'>
+    <view class='tr header clearfix'>
+        <view class='td td_goods'>商品</view>
+        <view class='td'>数量</view>
+        <view class='td'>价格</view>
+    </view>
+    <view class='tr clearfix' wx:for="{{goodsList}}" wx:key="*this">
+        <view class='td td_goods'>{{item.goodsName}}</view>
+        <view class='td'>{{item.num}}</view>
+        <view class='td'>￥{{item.goodsPrice}}</view>
+    </view>
+</view>
+
+<view class="remarks">
+    <input placeholder='填写备注' />
+</view>
+
+<view class='car_btn'>
+    <text>总价</text>
+    <text class="btn" >前往支付</text>
+    <text class='total'>￥{{total}}</text>
+</view>

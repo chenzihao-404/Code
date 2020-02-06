@@ -1,0 +1,104 @@
+/* pages/car/car.wxss */
+.goodsList{
+    height: 100px;
+    background-color:#fff;
+    padding-left: 100px;
+    position: relative;
+    margin-bottom:1px;
+}
+.goodsList .left{
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+.goodsList .left image{
+    width: 80px;
+    height: 80px;
+}
+
+.goodsList .right {
+    margin: 10px 0 ;
+    float: left;
+    height: 80px;
+}
+.goodsList .right navigator{
+    width: 100%;
+    height: 80px;
+}
+.goodsName{
+    font-size: 14px;
+}
+.goodsAddress{
+    color:#949494;
+    font-size: 12px;
+}
+.goodsPrice{
+    font-size: 14px;
+    color:#FF1794;
+    width:100%;
+    line-height: 22px;
+    height: 22px;
+}
+.car{
+    position: absolute;
+    bottom:10px;
+    right:10px;
+}
+.car image{
+    width: 20px;
+    height: 20px;
+}
+.car_num{
+    width: 96px;
+    height: 26px;
+    position: absolute;
+    bottom:10px;
+    right: 53px;
+}
+.car_num text{
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    font-size: 12px;
+    color: #B2B2B2;
+    float: left;
+    width: 26px;
+    border: 1px solid #B2B2B2;
+}
+.car_num text.carNum{
+    border-left: none;
+    border-right: none;
+    width: 40px;
+}
+.car_btn{
+    position: fixed;
+    left:0px;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    line-height:50px;
+    font-size: 14px;
+    color:#000;
+    background: #fff;
+    border-bottom: 1px solid #E5E5E5;
+}
+.car_btn .btn{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color:#fff;
+    background: #FF7E3A;
+    display: block;
+    float: right;
+    border-radius: 2px;
+    margin: 10px 10px 0 0 ;
+}
+.car_btn text{
+    display: inline-block;
+    margin-left: 10px;
+}
+.car_btn text.total{
+    color:#FF0000;
+}

@@ -1,0 +1,86 @@
+
+/* 分类 */
+.category{
+    padding-top:10px;
+    background: #fff;
+    margin-bottom:10px;
+}
+.category .ul{
+    width: 25%;
+    float: left;
+    margin-bottom: 10px;
+}
+.category .ul .li{
+    width: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+.category .ul .li image{
+    width: 40px;
+    height: 40px;
+}
+.category .ul .li text{
+    font-size: 14px;
+    width:40px;
+    text-align: center;
+    color:#7B7B7D;
+}
+
+.common_title{
+    padding:10px;
+    font-size: 16px;
+    border-bottom: 1px solid #CDCDCD;
+    background: #fff;
+}
+
+
+/* 商品列表 */
+.goodsList{
+    height: 100px;
+    background-color:#fff;
+    padding-left: 100px;
+    position: relative;
+    margin-bottom:1px;
+}
+.goodsList .left{
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+.goodsList .left image{
+    width: 80px;
+    height: 80px;
+}
+
+.goodsList .right {
+    margin: 10px 0 ;
+    float: left;
+    height: 80px;
+}
+.goodsList .right navigator{
+    width: 100%;
+    height: 80px;
+}
+.goodsName{
+    font-size: 14px;
+}
+.goodsAddress{
+    color:#949494;
+    font-size: 12px;
+}
+.goodsPrice{
+    font-size: 14px;
+    color:#FF1794;
+    width:100%;
+    line-height: 22px;
+    height: 22px;
+}
+.car{
+    position: absolute;
+    bottom:0px;
+    right:10px;
+}
+.car image{
+    width: 20px;
+    height: 20px;
+}

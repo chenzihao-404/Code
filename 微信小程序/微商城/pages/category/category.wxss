@@ -1,0 +1,51 @@
+/* pages/category/category.wxss */
+.category{
+    position: fixed;
+    top:0px;
+    bottom: 0px;
+    width: 80px;
+}
+.category .left{
+    width: 80px;
+    height: auto;
+    float: left;
+    background: #fff;
+}
+.scroll-view-item{
+    font-size: 14px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    border-bottom: 1px solid #F5F6F7;
+}
+.scroll-view-item.con{
+    background: #C8EBFA;
+}
+.right{
+    margin-left:82px;
+    background: #fff;
+}
+.datalists{
+    width: 100%;
+}
+.banner{
+    margin: 10px;
+}
+.ul{
+}
+
+.ul .li{
+    width: 33.33%;
+    text-align: center;
+    float: left;
+}
+.ul .li image{
+    width: 50px;
+    height: 50px;
+    margin:5px 0px;
+}
+.ul .li text{
+    display: block;
+    font-size: 12px;
+}
