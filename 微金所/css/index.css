@@ -1,0 +1,280 @@
+/* 页面顶部栏 start */
+.wjs_header {
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.wjs_header .container .row > div {
+    height: 40px;
+    border-right: 1px solid #ccc;
+    /* background-color: #fff; */
+    text-align: center;
+    line-height: 40px;
+}
+.wjs_header .container .row  > div.noBorder {
+    border-right: 1px solid transparent;
+}
+.wjs_header .container .row > div .wjs_tell_code {
+    display: block;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    color: #333;
+    font-size: 12px;
+}
+.wjs_header .container .row > div .wjs_tell_code .icon {}
+.wjs_header .container .row > div .wjs_tell_code img {
+    width: 120px;
+    position: absolute;
+    top: 40px;
+    left:50%;
+    z-index: 100000;
+    margin-left: -60px;
+    margin-top: -1px;
+    border: 1px solid #ccc;
+    border-top: 0;
+    display: none;
+}
+.wjs_header .container .row > div .wjs_tell_code:hover img {
+    display: block;
+}
+.wjs_header .container .row > div .wjs_link {
+    font-size: 13px;
+    color: #666;
+}
+/* 页面顶部栏 end   */
+
+
+/* 页面导航栏 start */
+.wjs_nav {
+
+}
+.wjs_nav .navbar-default .navbar-brand {
+    height: 80px;
+    line-height: 50px;
+}
+.wjs_nav .navbar-default .navbar-brand .wjs_icon_logo {
+    color: #e92333;
+    font-size: 50px;
+    vertical-align: middle;
+}
+.wjs_nav .navbar-default .navbar-brand .wjs_icon_word {
+    font-size: 30px;
+    vertical-align: middle;
+}
+.wjs_nav  .navbar-default {
+    background-color: transparent;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.wjs_nav .navbar-default .navbar-nav > li > a {
+    height: 80px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #666;
+}
+.wjs_nav .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    border-bottom: 3px solid #e92333;
+}
+.wjs_nav .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: transparent;
+    border-bottom: 3px solid #e92333;
+}
+.wjs_nav .navbar-default .navbar-toggle {
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+/* 页面导航栏 end   */
+
+/* 页面广告栏 start */
+.wjs_banner {
+    width: 100%;
+}
+.wjs_banner .item .pc_img {
+    display: block;
+    width: 100%;
+    height: 410px;
+    /* 背景图尺寸 */
+    background-size: 100% 100% ;
+}
+.wjs_banner .item .mb_img {
+    display: none;
+}
+.wjs_banner .item .mb_img img {
+    display: block;
+    width: 100%;
+}
+/* 页面广告栏 end   */
+
+
+/* 页面产品栏 start */
+.wjs_product {
+    width: 100%;
+    padding: 50px;
+}
+.wjs_product .container .row > div a {
+    color: #333;
+    padding: 20px 15px;
+}
+.wjs_product .container .row > div a:hover {
+    color: #e92333;
+}
+.wjs_product .container .row > div a  .wjs_icon {
+    font-size: 32px;
+}
+
+@media (min-width:1200px) {
+    .wjs_product .container {
+        width: 970px;
+    }
+}
+
+/* 页面产品栏 end   */
+
+
+/* 页面预约栏 start  */
+.wjs_book {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 30px;
+}
+.wjs_book .wjs_icon {
+    font-size: 30px;
+    vertical-align: middle;
+}
+.wjs_book  .wjs_book_link {
+    color: #e92333;
+    border-bottom: 1px dashed #e92333;
+}
+.wjs_book .wjs_book_text {
+    vertical-align: middle;
+}
+.wjs_book .hide_icon {
+    visibility: hidden;
+}
+/* 页面预约栏 end    */
+
+/* 页面活动栏 start */
+.wjs_activity {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f8f8f8;
+}
+.wjs_activity  .nav-tabs > li > a {
+    color: #333;
+}
+.wjs_activity  .nav-tabs > li > a:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+.wjs_activity .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 3px solid #e92333;
+}
+.wjs_activity .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.wjs_activity .row > div .item {
+    display: block;
+    width: 100%;
+    min-height: 150px;
+    background-color: #fff;
+    /* border: 1px solid #ccc; */
+    box-shadow: 0 0 1px 1px #ccc;/* 1.水平偏移  2.垂直偏移 3.模糊度 4.延伸量 5.颜色*/
+    margin-top: 20px;
+    color:#333;
+}
+.wjs_activity .row > div .item .left {
+    min-height: 150px;
+    overflow: hidden;
+}
+.wjs_activity .row > div .item .left p {
+    height: 15px;
+    line-height: 15px;
+    overflow: hidden;
+}
+.wjs_activity .row > div .item .left h3 {
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+.wjs_activity .row > div .item .right {
+    width:108px;
+    min-height: 150px;
+    float: right;
+    position: relative;
+    border-left: 1px dashed #ccc;
+}
+.wjs_activity .row > div .item .right .box {
+    width: 100%;
+    position: absolute;
+    top: 8px;
+    text-align: center;
+}
+.wjs_activity .row > div .item .right .box span.address {
+    color: red;
+    border: 1px solid red;
+}
+.wjs_activity .row > div .item .right .box span.company {
+    color: green;
+    border: 1px solid green;
+}
+.wjs_activity .row > div .item .right p.mt25 {
+    margin-top: 25px;
+}
+.wjs_activity .row > div .item .right p {
+    text-align: center;
+}
+.wjs_activity .row > div .item .right p b {
+    font-size: 44px;
+    font-weight: bold;
+    color: #e92333;
+}
+/* 利用伪类元素，绘制点缀的图标 */
+.wjs_activity .row > div .item .right::before,
+.wjs_activity .row > div .item .right::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #f8f8f8;
+    position: absolute;
+    left: -6px;
+    z-index: 1000;
+}
+/* 定位 */
+.wjs_activity .row > div .item .right::before {
+    top:-6px;
+    /* box-shadow: 0 1px 1px  #ccc inset; */
+    /* 1.水平偏移  2.垂直偏移 3.模糊度 4.延伸量 5.颜色 6. 内阴影*/
+    box-shadow: 0 -2px 2px 0 #d8d8d8 inset;
+}
+.wjs_activity .row > div .item .right::after {
+    bottom: -6px;
+    /* 1.水平偏移  2.垂直偏移 3.模糊度 4.延伸量 5.颜色 6. 内阴影*/
+    box-shadow: 0 2px 2px 0 #d8d8d8 inset;
+}
+
+
+.wjs_activity .row > div .item.current {
+    background-color: #e92333;
+    color: #fff;
+    position: relative;
+}
+.wjs_activity .row > div .item.current::after {
+    content: "\e915";
+    font-family: weijinsuo;
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: -8px;
+}
+.wjs_activity .row > div .item.current .right p b {
+   color: #fff;
+}
+/* 页面活动栏 end   */
