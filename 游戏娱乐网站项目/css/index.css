@@ -1,0 +1,180 @@
+
+ html, body ,ul li{
+     padding:0;
+     margin: 0;
+     list-style: none;
+ }
+
+ /*----------------------------header----------------------------------*/
+
+ .head_nav{
+      
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:1000;
+    width: 100%;
+
+
+ }
+ .head_nav .container-fluid{
+    padding: 0;
+ }
+.head_nav .container-fluid .navbar-default {
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    border-radius:0;
+    border:none;
+    background-color: transparent;
+}
+
+
+ /*----------------------------banner----------------------------------*/
+
+ .banner{
+     width: 100%;
+
+ } 
+ .banner .img-responsive{
+    width: 100%;
+ }  
+
+ /*-------------------------WeJoin--------------------------------*/
+
+.weJoin{
+     width:100%;
+     background-color: #CCCCCC;
+
+}
+
+.weJoin .tip{
+  width:100%;
+  height:130px;
+  text-align:center;
+}
+
+.weJoin .container-fluid .imgBox .row .rowBox>div{
+    padding:0;
+    background-color: #fff;
+}
+
+/* .weJoin .container-fluid .imgBox .row >div>img{
+    width: 90%;
+} */
+
+.weJoin .container-fluid .btn{
+    display: block;
+    margin: 50px auto;
+} 
+
+
+/*-----------------------about---------------------------*/
+.about .container .content>h1{
+    width: 100%;
+    text-align:center;
+}
+ .about .container .content>p{
+     width: 100%;
+     text-align:center;
+     /* background-color: pink; */
+ }
+
+
+.about .container .circl li{
+    /* border: 1px solid yellow; */
+    /* list-style: none; */
+    margin-top: 5px;
+} 
+.about .container .circl>li>div{
+    width: 120px;
+    height: 120px;
+    border:1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding:25px 0;
+}
+
+.about .container .circl>li>div>span{
+    height: 30px;
+    font-size: 25px;
+    color:red;
+    margin-top: 20px;
+}
+.about .container .circl>li>div>p{
+    height: 20px;
+}
+
+/*-------------------------investor--------------------------*/
+
+.investor{
+    width: 100%;
+    background-color: #F0F0F0;
+    margin-top: 20px;
+}
+.investor .container>h2{
+    width: 100%;
+    text-align:center;
+}
+
+
+
+.investor .container>ul{
+    width: 100%;
+
+}
+.investor .container>ul>li{
+    width: 20%;
+    float: left;
+    /* list-style: none; */
+
+}
+
+.investor .container>ul>li>img{
+    width:80%;
+    
+}
+
+
+/*---------------------doing-----------------------------*/
+
+ .doing .container .content {
+     width:100%;
+     text-align:center;
+ }
+ .doing .container .imgBox li{
+     padding:0;
+ }
+ .doing .container .imgBox li>div{
+     width: 100%;
+     /* background-color: pink; */
+     text-align: center;
+
+ }
+ /* .doing .container .imgBox li>div>img{
+     margin:0 6px;
+ } */
+ /* .doing .container .imgBox li>div>p{
+     width:50%;
+     text-align:center;
+     line-height: 20px;
+     margin:10px 30px;
+ } */
+
+ .doing .container .linkBox li{
+    text-align:center;
+ }
+
+
+ /*-------------------foot_nav---------------------------------*/
+
+.foot_nav{
+    width: 100%;
+    background-color:#CCCCCC;
+}
+
+.foot_nav .container .content_box {
+    margin: 100px auto;
+    text-align:center;
+}
